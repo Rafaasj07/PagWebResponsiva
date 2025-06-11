@@ -1,0 +1,76 @@
+/* CORES
+*/
+/* Color Theme Swatches in Hex */
+.Moda-1-hex { color: #8C2641; }
+.Moda-2-hex { color: #D95578; }
+.Moda-3-hex { color: #7165BF; }
+.Moda-4-hex { color: #d9d9d9; }
+.Moda-5-hex { color: #0D0D0D; }
+ /* Color Theme Swatches in Hex */
+.Moda-1-hex { color: #593C47; }
+.Moda-2-hex { color: #F2E63D; }
+.Moda-3-hex { color: #F2C53D; }
+.Moda-4-hex { color: #F25C05; }
+.Moda-5-hex { color: #F24405; }
+
+/*font-family: 'Caveat', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Marhey', cursive;
+font-family: 'Mynerve', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+/* Imagem de fundo do Header para telas médias */
+@media screen and (max-width: 1200px) {
+    header {
+        background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.2) ) ,url('../Imagens/headerCAPAM.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+/* Imagem de fundo do Header para telas pequenas */
+@media screen and (max-width: 800px) {
+    header {
+        background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.2) ) ,url('../Imagens/headerCAPAP.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+/* Estilos do Menu Hambúrguer para telas de até 663px */
+@media screen and (max-width: 663px) {
+    header nav#nav-esq {
+        justify-content: space-between; /* Alinha logo à esquerda e ícone à direita */
+    }
+
+    /* Mostra o container dos ícones (hambúrguer e X) */
+    header nav#nav-esq ul#icone-menu {
+        display: flex; /* Sobrescreve a regra do style.css para mostrar na versão mobile */
+    }
+
+    /* Esconde o ícone "X" (fechar) por padrão */
+    header nav#nav-esq ul#icone-menu li#menux {
+        display: none;
+    }
+
+    /* Esconde o menu de navegação principal por padrão */
+    header nav#nav-esq ul#menu-central {
+        display: none; /* ESSENCIAL: O jQuery controla a exibição a partir daqui */
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        background-color: #D95578;
+        padding: 1rem;
+        position: absolute;
+        top: 119px;
+        right: 0;
+        z-index: 999;
+        border-radius: 0 0 0 10px;
+    }
+    
+    header nav#nav-esq ul#menu-central li {
+        margin: 15px 0;
+    }
+}

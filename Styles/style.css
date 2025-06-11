@@ -1,0 +1,239 @@
+/* CORES
+*/
+/* Color Theme Swatches in Hex */
+.Moda-1-hex { color: #8C2641; }
+.Moda-2-hex { color: #D95578; }
+.Moda-3-hex { color: #7165BF; }
+.Moda-4-hex { color: #d9d9d9; }
+.Moda-5-hex { color: #0D0D0D; }
+ /* Color Theme Swatches in Hex */
+.Moda-1-hex { color: #593C47; }
+.Moda-2-hex { color: #F2E63D; }
+.Moda-3-hex { color: #F2C53D; }
+.Moda-4-hex { color: #F25C05; }
+.Moda-5-hex { color: #F24405; }
+
+/*font-family: 'Caveat', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Marhey', cursive;
+font-family: 'Mynerve', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+/*------------------------*/
+/* Elementos Globais      */
+/*------------------------*/
+h1{
+    font-size: max(30px, 3.4vw);
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px #86511c;
+}
+    
+h2{
+    font-size: max(15px, 1.2vw);
+    color: #D95578 !important;
+    text-shadow: 1px 1px 2px #86511c;
+}
+
+div.chamada a{
+    font-size: max(16px, 2.2vw);
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(45deg, #86511c, #b8743a, #d9a55c);
+    border-radius: 50px;
+    padding: 13px 40px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+/*------------------------*/
+/* Elementos header      */
+/*------------------------*/ 
+header {
+    max-width:100%;
+    height: 90vh;
+    /* CAMINHO CORRIGIDO AQUI */
+    background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.2) ) ,url('../Imagens/headerCAPAG.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+} 
+/*------------------------*/
+/* Navegador          */
+/*------------------------*/   
+header nav#nav-esq{
+    max-width: 100%;
+    height: 120px;
+    background-color: #D95578;
+    display: flex;
+    align-items: center;
+}
+header nav#nav-esq div#logo{
+    width: 140px;
+    height: 140px;
+    margin-left: 2rem;
+    margin-bottom: 10px;
+
+}
+header nav div#logo img#headerlOGO {
+    max-height: 100%;
+    max-width: 100%;
+} 
+/*------------------------*/
+/* Menu Hamburguer      */
+/*------------------------*/
+header nav#nav-esq ul#icone-menu{
+    display: none;
+
+}
+header nav#nav-esq ul#icone-menu li {
+    list-style: none;
+}
+header nav#nav-esq ul#icone-menu li ion-icon{
+   font-size: 50px;
+   color: #ffffff;
+   margin-right: 2rem;
+}
+/*------------------------*/
+/* Menu Central        */
+/*------------------------*/
+header nav#nav-esq ul#menu-central{
+    display: flex;
+    margin-left: 2rem;
+    flex-flow: row wrap;
+}
+header nav#nav-esq ul#menu-central li{
+    list-style: none;
+    margin-right: 3rem;
+
+}
+header nav#nav-esq ul#menu-central li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 135%;
+    text-shadow: 3px 3px 15px #86511c;
+    padding-bottom: 5px;
+    transition: 0.3s ease-out;
+    font-family: 'Roboto', sans-serif;
+}
+header nav#nav-esq ul#menu-central li a:hover{
+    border-bottom: 1px solid #ffffff;
+    opacity: 0.6;
+}
+/*------------------------*/
+/* CHAMADA           */
+/*------------------------*/
+header div.chamada {
+    position: absolute;
+    font-family: 'Caveat', cursive;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+header div.chamada h1 {
+    margin-bottom: 20px;
+    margin-top: -40px;
+}
+header div.chamada h2 {
+    margin-bottom: 70px;
+}
+/*------------------------*/
+/* Sobre           */
+/*------------------------*/
+section.sobre{
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+      
+}
+section.sobre div.sobre-mestre{
+    text-align: center;
+    margin-bottom: 30px;
+}
+section.sobre div.sobre-mestre img{
+    border: 2px solid #D95578 ;
+}
+section.sobre div.sobre-mestre h2{
+    text-shadow: 1px 1px 2px #86511c;
+    margin-bottom: 10px;
+}
+section.sobre div.sobre-mestre p{
+    margin-bottom: 40px;
+}
+/*------------------------*/
+/* Solucao          */
+/*------------------------*/
+
+section.solucao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid #86511c;
+    border-bottom: 5px solid #86511c;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+    background-color: #D95578;
+}
+section.solucao h2{
+    color: #ffffff !important;
+    text-shadow: 2px 2px 5px rgba(242, 92, 5, 0.5), 3px 3px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 40px;
+    padding-left: 17px;
+    padding-right: 17px;
+    max-width: 1000px;
+    font-size:max(25px, 2vw);
+}
+
+section.solucao div.solucao-mestre{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+section.solucao div.solucao-mestre div.solucao-texto {
+    color: #FFF;
+    max-width: 800px;
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.8; 
+    margin-bottom: 20px;   
+    margin-top: 20px;
+}
+section.solucao div.solucao-mestre div.solucao-texto p{
+    width: 100%;
+    margin: auto;
+    font-size: max(16px, 1vw);
+}
+
+section.solucao h3{
+    color: #ffffff !important;
+    text-shadow: 2px 2px 5px rgba(242, 92, 5, 0.5), 3px 3px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 50px;
+    padding-left: 17px;
+    padding-right: 17px;
+    max-width: 1000px;
+    font-size:max(25px, 2vw);
+}

@@ -1,40 +1,22 @@
-/* CORES
-*/
-/* Color Theme Swatches in Hex */
-.Moda-1-hex { color: #8C2641; }
-.Moda-2-hex { color: #D95578; }
-.Moda-3-hex { color: #7165BF; }
-.Moda-4-hex { color: #d9d9d9; }
-.Moda-5-hex { color: #0D0D0D; }
- /* Color Theme Swatches in Hex */
-.Moda-1-hex { color: #593C47; }
-.Moda-2-hex { color: #F2E63D; }
-.Moda-3-hex { color: #F2C53D; }
-.Moda-4-hex { color: #F25C05; }
-.Moda-5-hex { color: #F24405; }
-
-/*font-family: 'Caveat', cursive;
-font-family: 'EB Garamond', serif;
-font-family: 'Marhey', cursive;
-font-family: 'Mynerve', cursive;
-font-family: 'Roboto', sans-serif;*/
-
 /*------------------------*/
-/* Elementos Globais      */
+/*    Elementos Globais   */
 /*------------------------*/
-h1{
+h1 {
     font-size: max(30px, 3.4vw);
     color: #ffffff !important;
     text-shadow: 1px 1px 2px #86511c;
+    font-family: 'Caveat', 'cursive';
+
 }
-    
-h2{
+
+h2 {
     font-size: max(15px, 1.2vw);
     color: #D95578 !important;
     text-shadow: 1px 1px 2px #86511c;
+    font-family: 'Caveat', cursive;
 }
 
-div.chamada a{
+div.chamada a {
     font-size: max(16px, 2.2vw);
     font-weight: 600;
     color: #ffffff;
@@ -43,77 +25,87 @@ div.chamada a{
     background: linear-gradient(45deg, #86511c, #b8743a, #d9a55c);
     border-radius: 50px;
     padding: 13px 40px;
+    font-family: 'Caveat', 'cursive';
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
- 
+
 /*------------------------*/
-/* Elementos header      */
-/*------------------------*/ 
+/*     Elementos header   */
+/*------------------------*/
 header {
-    max-width:100%;
+    max-width: 100%;
     height: 90vh;
-    background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.2) ) ,url('../Imagens/headerCAPAG.jpg');
+    background: linear-gradient(rgba(13, 13, 13, 0.6), rgba(13, 13, 13, 0.2)), url('../Imagens/headerCAPAG.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     position: relative;
-} 
+}
+
 /*------------------------*/
-/* Navegador          */
-/*------------------------*/   
-header nav#nav-esq{
+/*        Navegador       */
+/*------------------------*/
+header nav#nav-esq {
     max-width: 100%;
     height: 120px;
     background-color: #D95578;
     display: flex;
     align-items: center;
 }
-header nav#nav-esq div#logo{
+
+header nav#nav-esq div#logo {
     width: 140px;
     height: 140px;
     margin-left: 2rem;
     margin-bottom: 10px;
 
 }
+
 header nav div#logo img#headerlOGO {
     max-height: 100%;
     max-width: 100%;
-} 
+}
+
 /*------------------------*/
-/* Menu Hamburguer      */
+/*     Menu Hamburguer    */
 /*------------------------*/
-header nav#nav-esq ul#icone-menu{
+header nav#nav-esq ul#icone-menu {
     display: none;
 
 }
+
 header nav#nav-esq ul#icone-menu li {
     list-style: none;
 }
-header nav#nav-esq ul#icone-menu li ion-icon{
-   font-size: 50px;
-   color: #ffffff;
-   margin-right: 2rem;
+
+header nav#nav-esq ul#icone-menu li ion-icon {
+    font-size: 50px;
+    color: #ffffff;
+    margin-right: 2rem;
 }
+
 /*------------------------*/
-/* Menu Central        */
+/*      Menu Central      */
 /*------------------------*/
-header nav#nav-esq ul#menu-central{
+header nav#nav-esq ul#menu-central {
     display: flex;
     padding-top: 20px;
     margin-left: 2rem;
     flex-flow: row wrap;
 }
-header nav#nav-esq ul#menu-central li{
+
+header nav#nav-esq ul#menu-central li {
     list-style: none;
     margin-right: 3rem;
 
 }
-header nav#nav-esq ul#menu-central li a{
+
+header nav#nav-esq ul#menu-central li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 135%;
@@ -122,20 +114,22 @@ header nav#nav-esq ul#menu-central li a{
     transition: 0.3s ease-out;
     font-family: 'Roboto', sans-serif;
 }
-header nav#nav-esq ul#menu-central li a:hover{
+
+header nav#nav-esq ul#menu-central li a:hover {
     border-bottom: 1px solid #ffffff;
     opacity: 0.6;
 }
+
 /*------------------------*/
-/* CHAMADA           */
+/*        CHAMADA         */
 /*------------------------*/
 header div.chamada {
     position: absolute;
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', 'cursive';
     width: 100%;
     height: 300px;
     text-align: center;
-    top:60%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -145,13 +139,15 @@ header div.chamada h1 {
     margin-bottom: 20px;
     margin-top: -40px;
 }
+
 header div.chamada h2 {
     margin-bottom: 70px;
 }
+
 /*------------------------*/
-/* Sobre           */
+/*         Sobre          */
 /*------------------------*/
-section.sobre{
+section.sobre {
     max-width: 100%;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -159,24 +155,29 @@ section.sobre{
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
-      
+
 }
-section.sobre div.sobre-mestre{
+
+section.sobre div.sobre-mestre {
     text-align: center;
     margin-bottom: 30px;
 }
-section.sobre div.sobre-mestre img{
-    border: 2px solid #D95578 ;
+
+section.sobre div.sobre-mestre img {
+    border: 2px solid #D95578;
 }
-section.sobre div.sobre-mestre h2{
+
+section.sobre div.sobre-mestre h2 {
     text-shadow: 1.5px 1.5px 2px #86511c;
     margin-bottom: 10px;
 }
-section.sobre div.sobre-mestre p{
+
+section.sobre div.sobre-mestre p {
     margin-bottom: 40px;
 }
+
 /*------------------------*/
-/* Solucao          */
+/*         Solucao        */
 /*------------------------*/
 
 section.solucao {
@@ -185,15 +186,15 @@ section.solucao {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 5px solid #86511c;
-    border-bottom: 5px solid #86511c;
+    border-top: 5px solid #d78635;
+    border-bottom: 5px solid #d78635;
     padding-top: 25px;
     padding-bottom: 50px;
-    margin-bottom: 60px;
+
     background-color: #690520;
 }
 
-section.solucao div.solucao-mestre{
+section.solucao div.solucao-mestre {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -207,11 +208,12 @@ section.solucao div.solucao-mestre div.solucao-texto {
     max-width: 800px;
     font-size: 20px;
     text-align: left;
-    line-height: 1.8; 
-    margin-bottom: 20px;   
+    line-height: 1.8;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
-section.solucao div.solucao-mestre div.solucao-texto p{
+
+section.solucao div.solucao-mestre div.solucao-texto p {
     width: 90%;
     text-align: left;
     margin-left: 20px;
@@ -227,20 +229,164 @@ section.solucao h3 {
     padding-left: 17px;
     padding-right: 17px;
     max-width: 1000px;
-    font-size:max(25px, 2vw);
+    font-size: max(25px, 2vw);
+    font-family: 'Caveat', 'cursive';
 }
 
-section.solucao div.solucao-mestre #solucao-img { 
-    max-width: 350px; 
+section.solucao div.solucao-mestre #solucao-img {
+    max-width: 350px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section.solucao div.solucao-mestre #solucao-img img { 
+section.solucao div.solucao-mestre #solucao-img img {
     max-width: 100%;
     height: auto;
     display: block;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------*/
+/*         MAKES          */
+/*------------------------*/
+
+section.makes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #000000;
+}
+
+section.makes h1 {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    max-width: 850px;
+    font-size: max(30px, 2.45vw);
+    text-align: center;
+    text-shadow: 1.6px 1.6px 2.5px #ffffff;
+    color: #ffffff !important;
+}
+
+section.makes div.makes-container {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------*/
+/* ELEMENTOS DO FOOTER    */
+/*------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px 40px;
+    background-color: #D95578;
+}
+
+/* Regra MODIFICADA para agrupar e centralizar o conteúdo */
+footer div.footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza o grupo de itens */
+    align-items: center;
+    padding-top: 40px;
+    padding-right: 120px;
+    gap: 200px; /* Espaçamento entre os itens (ajuste se necessário) */
+}
+
+footer div.footer-container div.logo-footer {
+    width: 200px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+footer div.footer-container div.logo-footer img {
+    max-width: 100%;
+}
+
+/* Regra MODIFICADA para remover expansão e margens */
+footer div.footer-container div.footer-info {
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0; /* Garante que a lista não tenha margens */
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li:last-child {
+    margin-bottom: 0; /* Remove margem do último item da lista */
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    text-shadow: 3px 3px 15px #86511c;
+    transition: .3s ease-out;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li a:hover {
+    border-bottom: 1px solid #ffffff;
+    opacity: 0.6;
+}
+
+/* Regra MODIFICADA para remover expansão e margens */
+footer div.footer-container div.cartoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove margem */
+}
+
+footer div.footer-container div.cartoes span {
+    font-size: max(16px, 1.3vw);
+    font-family: 'Caveat', 'cursive';
+    margin-bottom: 15px; /* Adicionado espaço abaixo do texto */
+    color: #ffffff;
+    text-align: center;
+}
+
+footer div.footer-container div.cartoes div.footer-img-cartoes {
+    max-width: 340px;
+}
+
+footer div.footer-container div.cartoes div.footer-img-cartoes img {
+    max-width: 100%;
+}
+
+footer .autorais {
+    margin-top: 30px;
+    color: #d9d9d9;
+    font-size: max(14px, .8vw);
+    text-align: center;
+    width: 100%;
+    display: block;
 }

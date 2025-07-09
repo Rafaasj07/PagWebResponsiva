@@ -22,8 +22,8 @@
     }
 }
 
-/* Estilos do Menu Hambúrguer para telas de até 663px */
-@media screen and (max-width: 794px) {
+/* Estilos do Menu Hambúrguer para telas de até 866px */
+@media screen and (max-width: 866px) {
     header nav#nav-esq {
         justify-content: space-between;
         /* Alinha logo à esquerda e ícone à direita */
@@ -58,6 +58,7 @@
 
     header nav#nav-esq ul#menu-central li {
         margin: 15px 0;
+        margin-right: 14px;
     }
 }
 
@@ -77,9 +78,13 @@
 /* Media query para tablets e telas menores (a partir de 992px) */
 @media screen and (max-width: 992px) {
     footer div.footer-container {
-        flex-direction: column; /* Empilha os itens verticalmente */
-        gap: 5px; /* Reduz o espaçamento para o layout vertical */
-        padding-right: 0; /* Remove o padding da direita no modo coluna */
+        margin-top: -32px;
+        flex-direction: column;
+        /* Empilha os itens verticalmente */
+        gap: 5px;
+        /* Reduz o espaçamento para o layout vertical */
+        padding-right: 0;
+        /* Remove o padding da direita no modo coluna */
     }
 
     footer div.footer-container div.footer-info {
@@ -90,10 +95,12 @@
 /* Media query para smartphones (a partir de 480px) */
 @media screen and (max-width: 480px) {
     footer div.footer-container div.cartoes div.footer-img-cartoes {
-        max-width: 280px; /* Ajusta a imagem dos cartões para telas pequenas */
+        max-width: 280px;
+        /* Ajusta a imagem dos cartões para telas pequenas */
     }
 
     footer div.footer-container div.footer-info nav.nav-footer ul li a {
-        font-size: 20px; /* Ajusta o tamanho da fonte */
+        font-size: 20px;
+        /* Ajusta o tamanho da fonte */
     }
 }

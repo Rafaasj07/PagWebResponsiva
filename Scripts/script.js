@@ -61,7 +61,7 @@ $(document).ready(function () {
         let botaoMenu = $('header nav#nav-esq ul#icone-menu li#menu, header nav#nav-esq ul#icone-menu li#menux'); // Referência aos botões do menu.
 
         // Verifica se a largura atual da janela é menor ou igual ao breakpoint mobile (794px).
-        if ($(window).width() <= 794) {
+        if ($(window).width() <= 866) {
             // Verifica se o clique não ocorreu dentro do menu e nem nos botões de menu.
             if (!menu.is(event.target) && menu.has(event.target).length === 0 &&
                 !botaoMenu.is(event.target) && botaoMenu.has(event.target).length === 0) {
@@ -80,7 +80,7 @@ $(document).ready(function () {
     $(window).resize(function () {
         // Se a largura da janela for maior que o breakpoint mobile (794px),
         // assume-se o layout desktop.
-        if ($(window).width() > 794) {
+        if ($(window).width() > 866) {
             // Garante que o menu esteja visível, com layout flex e opacidade total,
             // adequado para a navegação em desktop.
             $('header nav#nav-esq ul#menu-central').css({

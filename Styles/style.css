@@ -36,7 +36,7 @@ div.chamada a {
     transition: .3s ease-in-out;
 }
 
-div.chamada a:hover{
+div.chamada a:hover {
     opacity: .8;
 }
 
@@ -74,7 +74,7 @@ header nav#nav-esq {
 header nav#nav-esq div#logo {
     width: 140px;
     height: 140px;
-    margin-left: 2rem;
+    margin-left: 0.1rem;
     margin-bottom: 10px;
 
 }
@@ -108,7 +108,7 @@ header nav#nav-esq ul#icone-menu li ion-icon {
 header nav#nav-esq ul#menu-central {
     display: flex;
     padding-top: 20px;
-    margin-left: 2rem;
+    margin-left: 0.4rem;
     flex-flow: row wrap;
 }
 
@@ -305,7 +305,7 @@ section.makes div.makes-container {
     align-items: center;
 }
 
-section.makes h5{
+section.makes h5 {
     font-weight: bold;
 }
 
@@ -328,10 +328,10 @@ footer div.footer-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     padding-right: 7px;
-    gap: 200px; 
+    gap: 200px;
 }
 
 footer div.footer-container div.logo-footer {
@@ -356,7 +356,7 @@ footer div.footer-container div.footer-info nav.nav-footer ul {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
 
 footer div.footer-container div.footer-info nav.nav-footer ul li {
@@ -366,7 +366,8 @@ footer div.footer-container div.footer-info nav.nav-footer ul li {
 }
 
 footer div.footer-container div.footer-info nav.nav-footer ul li:last-child {
-    margin-bottom: 0; /* Remove margem do último item da lista */
+    margin-bottom: 0;
+    /* Remove margem do último item da lista */
 }
 
 footer div.footer-container div.footer-info nav.nav-footer ul li a {
@@ -388,13 +389,15 @@ footer div.footer-container div.cartoes {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0; /* Remove margem */
+    margin: 0;
+    /* Remove margem */
 }
 
 footer div.footer-container div.cartoes span {
     font-size: max(16px, 1.3vw);
     font-family: 'Caveat', 'cursive';
-    margin-bottom: 15px; /* Adicionado espaço abaixo do texto */
+    margin-bottom: 15px;
+    /* Adicionado espaço abaixo do texto */
     color: #ffffff;
     text-align: center;
 }

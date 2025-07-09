@@ -78,8 +78,12 @@
 @media screen and (max-width: 992px) {
     footer div.footer-container {
         flex-direction: column; /* Empilha os itens verticalmente */
-        gap: 10px; /* Reduz o espaçamento para o layout vertical */
+        gap: 5px; /* Reduz o espaçamento para o layout vertical */
         padding-right: 0; /* Remove o padding da direita no modo coluna */
+    }
+
+    footer div.footer-container div.footer-info {
+        padding-top: 20px;
     }
 }
 

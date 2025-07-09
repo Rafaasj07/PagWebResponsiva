@@ -2,18 +2,19 @@
 /*    Elementos Globais   */
 /*------------------------*/
 h1 {
-    font-size: max(30px, 3.4vw);
+    font-size: max(40px, 3.4vw);
     color: #ffffff !important;
     text-shadow: 1px 1px 2px #86511c;
     font-family: 'Caveat', 'cursive';
-
+    font-weight: bold;
 }
 
 h2 {
-    font-size: max(15px, 1.2vw);
+    font-size: max(20px, 1.2vw);
     color: #D95578 !important;
     text-shadow: 1px 1px 2px #86511c;
     font-family: 'Caveat', cursive;
+    font-weight: bold;
 }
 
 div.chamada a {
@@ -26,7 +27,19 @@ div.chamada a {
     border-radius: 50px;
     padding: 13px 40px;
     font-family: 'Caveat', 'cursive';
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-in-out;
 }
+
+div.chamada a:hover{
+    opacity: .8;
+}
+
 
 * {
     padding: 0;
@@ -138,10 +151,20 @@ header div.chamada {
 header div.chamada h1 {
     margin-bottom: 20px;
     margin-top: -40px;
+
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 header div.chamada h2 {
     margin-bottom: 70px;
+
+    animation-name: HeaderH2-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
 }
 
 /*------------------------*/
@@ -168,8 +191,8 @@ section.sobre div.sobre-mestre img {
 }
 
 section.sobre div.sobre-mestre h2 {
-    text-shadow: 1.5px 1.5px 2px #86511c;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 section.sobre div.sobre-mestre p {
@@ -222,6 +245,7 @@ section.solucao div.solucao-mestre div.solucao-texto p {
 }
 
 section.solucao h3 {
+    font-weight: bold;
     color: #ffffff !important;
     text-shadow: 2px 2px 5px rgba(242, 92, 5, 0.5), 3px 3px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -267,10 +291,10 @@ section.makes h1 {
     margin-top: 50px;
     margin-bottom: 60px;
     max-width: 850px;
-    font-size: max(30px, 2.45vw);
+    font-size: max(30px, 2.3vw);
     text-align: center;
-    text-shadow: 1.6px 1.6px 2.5px #ffffff;
     color: #ffffff !important;
+    font-weight: bold;
 }
 
 section.makes div.makes-container {
@@ -281,8 +305,12 @@ section.makes div.makes-container {
     align-items: center;
 }
 
+section.makes h5{
+    font-weight: bold;
+}
+
 /*------------------------*/
-/* ELEMENTOS DO FOOTER    */
+/*  ELEMENTOS DO FOOTER   */
 /*------------------------*/
 
 footer {
@@ -295,32 +323,29 @@ footer {
     background-color: #D95578;
 }
 
-/* Regra MODIFICADA para agrupar e centralizar o conteúdo */
+
 footer div.footer-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza o grupo de itens */
+    justify-content: center; 
     align-items: center;
-    padding-top: 40px;
-    padding-right: 120px;
-    gap: 200px; /* Espaçamento entre os itens (ajuste se necessário) */
+    padding-right: 7px;
+    gap: 200px; 
 }
 
 footer div.footer-container div.logo-footer {
     width: 200px;
     cursor: pointer;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 footer div.footer-container div.logo-footer img {
     max-width: 100%;
 }
 
-/* Regra MODIFICADA para remover expansão e margens */
 footer div.footer-container div.footer-info {
-    margin-top: 50px;
-    padding: 0;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -331,7 +356,7 @@ footer div.footer-container div.footer-info nav.nav-footer ul {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0; /* Garante que a lista não tenha margens */
+    margin: 0; 
 }
 
 footer div.footer-container div.footer-info nav.nav-footer ul li {

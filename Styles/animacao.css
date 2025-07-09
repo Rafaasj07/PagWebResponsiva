@@ -1,0 +1,46 @@
+/*Animação do titulo*/
+
+@keyframes HeaderH1-moverParaDireita {
+    0%{
+        opacity: 0;
+        transform: translateX(-75px);
+    }
+    70%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes HeaderH2-moverParaEsquerda {
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    70%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes HeaderA-moverParaCima {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Classe de Animação*/
+
+.animate__normal {
+  animation-duration: 1.5s;
+}

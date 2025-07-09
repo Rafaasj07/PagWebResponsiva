@@ -13,7 +13,7 @@ h2 {
     font-size: max(20px, 1.2vw);
     color: #D95578 !important;
     text-shadow: 1px 1px 2px #86511c;
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', 'cursive';
     font-weight: bold;
 }
 
@@ -330,7 +330,7 @@ footer div.footer-container {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-right: 121px;
+    padding-right: 122px;
     gap: 200px;
 }
 
